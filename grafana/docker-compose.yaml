@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  grafana:
+    build:
+      context: .
+    container_name: grafana
+    restart: unless-stopped
+    ports:
+     - '3011:3000'
